@@ -1,7 +1,7 @@
 include_directories(. ${AZURESTORAGESAMPLES_INCLUDE_DIRS})
 
 # THE ORDER OF FILES IS VERY /VERY/ IMPORTANT
-iyf(UNIX)
+if(UNIX)
   set(SOURCES
      genomic-storages-main.cpp
      stdafx.cpp
