@@ -17,7 +17,8 @@ GenomicStorage::~GenomicStorage() {
 // clean up after all
 };
 
-void GenomicStorage::Init(const char *account_name,const char *account_key) {
+bool GenomicStorage::Init(const char *account_name,const char *account_key) {
+	return true;
 };
 
 bool GenomicStorage::AddBlob(void) {

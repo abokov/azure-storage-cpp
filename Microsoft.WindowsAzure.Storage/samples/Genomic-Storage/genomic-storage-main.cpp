@@ -34,8 +34,8 @@ bool parse_args(int argc, const char * argv[], std::string &account_name, std::s
 	if (argc!=3)
 		return false;
 	account_name = argv[1];
-	account_key = argv[2]
-	return true; 
+	account_key = argv[2];
+	return true;
 };
 
 
