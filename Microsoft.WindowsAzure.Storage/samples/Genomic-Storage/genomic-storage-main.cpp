@@ -19,7 +19,7 @@ int main(int argc, const char *argv[])
 	};
 	GenomicStorage my_storage = GenomicStorage();
 
-	if (my_storage.Init(account_name.c_str(), account_key.c_str()) == false ) {
+	if (my_storage.Init(account_name, account_key) == false ) {
 		std::cerr<<"Error at storage init\n command line: ";
 		for (int i=0;i<argc;++i) std::cerr<<argv[i];
 		std::cerr<<"\n Description:"<<my_storage.GetErrorDescription()<<"\n";

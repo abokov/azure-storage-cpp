@@ -17,7 +17,7 @@ GenomicStorage::~GenomicStorage() {
 // clean up after all
 };
 
-bool GenomicStorage::Init(const char *account_name,const char *account_key) {
+bool GenomicStorage::Init(const std::string &account_name,const std::string & account_key) {
 	if (account_name.length()==0) || (account_key.lenght()==0) {
 		error_descr = "Wrong length of account_name or account_key, account_name=\""<<account_name<<"\", account_key=\""<<account_key<<"\"\n";
 		return false;

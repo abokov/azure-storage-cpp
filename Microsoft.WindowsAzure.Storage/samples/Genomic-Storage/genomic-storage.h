@@ -20,7 +20,7 @@ class GenomicStorage {
 public:
 	GenomicStorage();
 	virtual ~GenomicStorage();
-	bool Init(const char *account_name,const char *account_key);
+	bool Init(const std::string & account_name,const std::string & account_key);
 	bool AddBlob(void);
 	bool ReadBlob(void);
 
