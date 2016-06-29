@@ -137,7 +137,7 @@ try {
 #endif
         return false;
 } catch (...) {
-        error_descr = "Unknown exception caught ";
+        error_descr = "Unknown exception caught ! ";
 #ifdef __DEBUG_GENOMIC__
         std::cout<<error_descr<<"\n";
 #endif
