@@ -14,7 +14,7 @@ int main(int argc, const char *argv[])
 {
 	std::string account_name, account_key;
 	if (parse_args(argc, argv, account_name, account_key) == false) {
-		std::cerr<<"Usage: genomicstorage _name_of_account _key_";
+		std::cerr<<"Usage: genomicstorage _name_of_account _key_\n";
 		return 1;
 	};
 	GenomicStorage my_storage = GenomicStorage();
