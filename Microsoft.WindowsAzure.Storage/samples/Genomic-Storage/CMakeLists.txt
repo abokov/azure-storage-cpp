@@ -9,6 +9,6 @@ if(UNIX)
 endif()
 
 #buildsample(${AZURESTORAGESAMPLES_GENOMIC} ${SOURCES})
-    add_executable(genomicsample ${SOURCES})
-    target_link_libraries(genomicsample ${AZURESTORAGESAMPLES_LIBRARIES})
+    add_executable(genomicstorage ${SOURCES})
+    target_link_libraries(genomicstorage ${AZURESTORAGESAMPLES_LIBRARIES})
 
